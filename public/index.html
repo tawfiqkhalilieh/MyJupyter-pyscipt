@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <br/><br/><br/>
+    <center><h1 style="padding-bottom: 20px;font-family:'Courier New'"><font size=80px color="white">My Jupyter</font></h1></center>
+</head>
+<body style="background-image: conic-gradient(#553c9a 0%, #553c9a 33%, #00c2cb 66%, #00c2cb 99%); ">
+    <py-env>
+        - numpy
+        - pandas
+        - matplotlib
+    </py-env>
+    <py-script>
+    </py-script><pre><py-script></py-script></pre><pre>
+<py-script>
+</py-script></pre>
+    <div>
+        <py-repl id="my-repl" auto-generate="true"></py-repl>
+    </div>
+    <br/>
+
+    <div style="margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: fixed;">
+    <button onClick="window.location.reload();">
+        <py-script>
+from datetime import datetime
+dt = "Refersh "+ f"{str(datetime.now())[:10]}"
+print(dt)
+        </py-script>
+    </button>
+    </div>
+</body>
+</html>
